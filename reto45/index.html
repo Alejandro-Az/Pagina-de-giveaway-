@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Sorteo</title>
+</head>
+<body>
+    <div class="contenido">
+        <img src="./src/giveawayPoster.png" alt="">
+        <hr>
+        <h1>🎄 AGREGAR PARTICIPANTES 🎄</h1>
+        <label for="participantes">Nombre del participante</label>
+        <input type="text" name="participantes" id="participantes">
+        <div class="botones">
+            <button onclick="agregarParticipante()" class="agregar">Agregar</button>
+            <button onclick="eliminarParticipante()" class="eliminar">Eliminar</button>
+        </div>
+        <hr>
+        <h1>🔽 LISTA DE PARTICIPANTES 🔽</h1>
+        <ul id="listaParticipantes">
+
+        </ul>
+        <hr>
+        <button id="ganador" onclick="ganadorAleatorio()">Encontrar ganador</button>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

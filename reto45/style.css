@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgba(18, 16, 18, 0.8);
+    font-family: 'Lora', serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-image: url('./src/snow-bg.gif');
+}
+
+.contenido {
+    border: 2px solid white;
+    display: flex;
+    height: 100vh;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenido img {
+    width: 100%;
+}
+
+.contenido hr {
+    color: white;
+    width: 100%;
+}
+
+.contenido h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    width: 80%;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.contenido h1:hover {
+    background: rgb(18, 16, 18);
+    color: white;
+}
+
+.contenido label {
+    color: white;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.contenido input {
+    background: white;
+    width: 350px;
+    height: 30px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.contenido .botones {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.contenido .botones button {
+    background-color: gainsboro;
+    width: 13%;
+    height: 30px;
+    margin: 10px 5px;
+    font-size: 20px;
+    color: black;
+    transition: 0.2s ease-in-out;
+}
+
+.contenido .botones .agregar:hover {
+    background: green;
+    color: white;
+    border: 2px dashed white;
+}
+
+.contenido .botones .eliminar:hover {
+    background: red;
+    color: white;
+    border: 2px dashed white;
+}
+
+.contenido ul {
+    width: 40%;
+    height: 37%;
+    text-align: center;
+    font-size: 25px;
+    overflow-y: auto;
+}
+
+.contenido ul li {
+    list-style: none;
+    background-color: white;
+    border: 3px solid black;
+    margin-bottom: 5px;
+    transition: 0.3s ease-in-out;
+    width: 80%;
+    margin-left: 50px;
+}
+
+.contenido ul li:hover {
+    background-color: #0096d2;
+    color: white;
+    border: 4px dashed white;
+}
+
+#ganador {
+    width: 30%;
+    height: 40px;
+    background: gainsboro;
+    font-size: 20px;
+    transition: 0.2s ease-in-out;   
+}
+
+#ganador:hover {
+    background: gold;
+    border: 4px dashed white;
+}
+
+#cargando {
+    display: none;
+}
